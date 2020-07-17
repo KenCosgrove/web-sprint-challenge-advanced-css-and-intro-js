@@ -253,7 +253,7 @@ function getArtistByIndex(array, index) {
 
 /**
 
-
+arr[i].years.includes("19") && arr[i].years.includes("18"
 /* Task 4: Create a function called get20s() that takes data as an argument and 
 returns an array with names of artists who were born in and died in 20th century 
 (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925
@@ -263,14 +263,12 @@ function get20s(arr) {
   let newarr = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].years.includes("19") && arr[i].years.includes("18")) {
+    if (arr[i].years[8].includes("9") && arr[i].years[1].includes("9")) {
       newarr.push(arr[i]);
     }
   }
   return newarr;
 }
-
-console.log(get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -356,14 +354,17 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */) {
+function getHTML(data) {
   /* Code here */
 }
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 function randomize(arr) {
+  array.sort(() => Math.random() - 0.5);
   let newarr = [];
+  shuffle(newarr);
+  alert(newarr);
 }
-
+console.log(randomize(artists));
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
