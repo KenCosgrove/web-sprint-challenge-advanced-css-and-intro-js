@@ -259,7 +259,18 @@ returns an array with names of artists who were born in and died in 20th century
 (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925
  not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(century) {}
+function get20s(arr) {
+  let newarr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].years.includes("19") && arr[i].years.includes("18")) {
+      newarr.push(arr[i]);
+    }
+  }
+  return newarr;
+}
+
+console.log(get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -302,7 +313,7 @@ addArtist(
   "1988-present",
   "Web Design",
   "USA",
-  "AJ is a Lambda Student and aspiring web devloper. He has just started to learn the building blocs of JavaScript. "
+  "AJ is a Lambda Student and aspiring web developer. He has just started to learn the building blocks of JavaScript. "
 );
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -313,8 +324,14 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */) {
-  /* Code here */
+function lotsOfArt(arr) {
+  let newarr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].paintings > 100) {
+      newarr.push(arr[i]);
+    }
+  }
+  return newarr;
 }
 
 // 🎨🎨 STRETCH 🎨🎨//
@@ -345,8 +362,8 @@ function getHTML(/* Code here */) {
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */) {
-  /* Code here */
+function randomize(arr) {
+  let newarr = [];
 }
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
