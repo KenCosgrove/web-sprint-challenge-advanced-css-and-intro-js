@@ -261,7 +261,6 @@ returns an array with names of artists who were born in and died in 20th century
 
 function get20s(arr) {
   let newarr = [];
-
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].years[8].includes("9") && arr[i].years[1].includes("9")) {
       newarr.push(arr[i]);
@@ -360,11 +359,6 @@ function getHTML(data) {
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(arr) {
-  array.sort(() => Math.random() - 0.5);
-  let newarr = [];
-  shuffle(newarr);
-  alert(newarr);
-}
-console.log(randomize(artists));
+function randomize(arr) {}
+
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */

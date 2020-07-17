@@ -213,7 +213,10 @@ button:hover {
   }
 
   nav {
-    width: 60%;
+    width: 40%;
+  }
+  nav a {
+    font-size: 1.5rem;
   }
 
   nav :first-child {
@@ -222,6 +225,7 @@ button:hover {
 
   h1 {
     font-size: 4rem;
+    padding-bottom: 1rem;
   }
 
   .title-container div {
@@ -243,14 +247,12 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 90%;
   }
 
   .artist img {
-    height: 22rem;
-    width: 80%;
+    height: 18rem;
+    width: 70%;
     margin-bottom: 2rem;
-  }
-  .bio {
   }
 }
